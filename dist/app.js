@@ -2,6 +2,7 @@ import { fitCardGroups, fitFacetGrid } from './layout.js';
 import { DIMENSIONS, buildFacetGrid, cardVenueLabel } from './facets.js';
 import { updateViewport } from './viewport.js';
 import { bindCardActivation, interactionHint } from './interaction.js';
+import { createCardMotion } from './motion.js';
 
 const info = document.querySelector('#paper-info');
 const details = info.querySelector('.info-details');
@@ -14,6 +15,9 @@ const venueToggle = document.querySelector('#venue-toggle');
 const escape = text => String(text ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
 const axes = { x: 'category', y: 'none' };
 const paperNodes = new Map();
+const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+const cardMotion = createCardMotion({ reducedMotion: () => motionPreference.matches });
+motionPreference.addEventListener('change', () => { if (motionPreference.matches) cardMotion.cancel(); });
 let active = null;
 const interactionState = { lastTap: null };
 let papers = [];
@@ -39,9 +43,10 @@ function createAxisPicker(axis, trigger) {
     option.dataset.value = value;
     option.textContent = label;
     option.addEventListener('click', () => {
+      const changed = axes[axis] !== value;
       axes[axis] = value;
       closeAxisMenus();
-      render();
+      if (changed) render(true);
       trigger.focus();
     });
     menu.append(option);
@@ -185,7 +190,8 @@ function fitCategoryTypography() {
     research.style.setProperty('--fine-label-size', fineSize + 'px');
   }
 }
-function render() {
+function render(animate = false) {
+  const previousPositions = animate ? cardMotion.capture(paperNodes.values()) : null;
   interactionState.lastTap = null;
   clearInfo();
   updateControls();
@@ -251,6 +257,7 @@ function render() {
     });
   }
   layout(true);
+  if (previousPositions) cardMotion.play(paperNodes.values(), previousPositions);
 }
 function layout(force = false) {
   if (!grid) return;

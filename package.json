@@ -1,0 +1,13 @@
+{
+  "name": "everyone-a-data-scientists",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "dev:lan": "HOST=0.0.0.0 node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "build": "node scripts/validate.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  }
+}

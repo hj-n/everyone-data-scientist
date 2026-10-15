@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Hyeon Jeon's research in data analysis and data communication.">
+  <title>Everyone a Data Scientist</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <h1>Everyone a Data Scientist <span class="author">Hyeon Jeon</span></h1>
+      <p class="publication-note">Please visit <a href="https://www.hyeonjeon.com/" target="_blank" rel="noopener noreferrer">my website</a> for the complete list of publications.</p>
+    </header>
+    <div class="axis-controls" role="group" aria-label="Paper grouping axes">
+      <div class="axis-control"><span>X axis</span><div class="axis-picker"><button id="x-axis" type="button" aria-label="X axis" aria-haspopup="listbox" aria-expanded="false" aria-controls="x-axis-options">Category (coarse)</button><div id="x-axis-options" class="axis-options" role="listbox" aria-label="X axis options" hidden></div></div></div>
+      <div class="axis-control"><span>Y axis</span><div class="axis-picker"><button id="y-axis" type="button" aria-label="Y axis" aria-haspopup="listbox" aria-expanded="false" aria-controls="y-axis-options">None</button><div id="y-axis-options" class="axis-options" role="listbox" aria-label="Y axis options" hidden></div></div></div>
+      <div class="venue-controls">
+        <button id="venue-toggle" type="button" aria-pressed="false" aria-controls="publication-grid">Show venue</button>
+        <div class="legend" aria-label="Authorship legend">
+          <span><i class="legend-swatch" aria-hidden="true"></i>Leading author</span>
+          <span><i class="legend-swatch dashed" aria-hidden="true"></i>Co-author</span>
+        </div>
+      </div>
+    </div>
+    <div id="publication-grid" class="research" aria-label="Publication grid"></div>
+    <div id="paper-info" role="status" aria-live="polite"><div class="info-details"></div><p class="info-hint">Hover over a card to flip it; click to open the paper.</p></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,77 @@
+{
+  "vis2026": {
+    "file": "assets/venues/vis2026.svg",
+    "url": "https://ieeevis.org/year/2026/assets/vis2026_logo.svg"
+  },
+  "chi2025": {
+    "file": "assets/venues/chi2025-cropped.svg",
+    "source": "assets/venues/chi2025.png",
+    "note": "User-supplied CHI 2025 Yokohama logo, with outer white margins excluded through an SVG viewport."
+  },
+  "vis2023": {
+    "file": "assets/venues/vis2023.svg",
+    "url": "https://ieeevis.org/year/2023/assets/vis2023_logo1.svg"
+  },
+  "vis2021": {
+    "file": "assets/venues/vis2021.svg",
+    "url": "https://ieeevis.org/year/2021/assets/vis2021_logo_rgb.svg"
+  },
+  "vis2025": {
+    "file": "assets/venues/vis2025.svg",
+    "url": "https://ieeevis.org/year/2025/assets/vis2025_logo_RIESENRAD.svg"
+  },
+  "vis2022": {
+    "file": "assets/venues/vis2022.svg",
+    "url": "https://ieeevis.org/year/2022/assets/vis2022_logo_rgb.svg"
+  },
+  "vis2024": {
+    "file": "assets/venues/vis2024.png",
+    "url": "https://ieeevis.org/year/2024/assets/vi2024_logo-v2-trim.png"
+  },
+  "chi2024": {
+    "url": "https://chi2024.acm.org/wp-content/uploads/2023/05/CHI2024_banner_website.svg",
+    "file": "assets/venues/chi2024.svg"
+  },
+  "pacificvis2026": {
+    "url": "https://pacificvis2026.github.io/images/pacificvis-2026-logo.png",
+    "file": "assets/venues/pacificvis2026.png"
+  },
+  "eurovis2025": {
+    "file": "assets/venues/eurovis2025.png",
+    "note": "EuroVis 2025 Luxembourg logo supplied by the user."
+  },
+  "arxiv": {
+    "url": "https://arxiv.org/static/base/1.0.1/images/arxiv-logo-primary-light.svg",
+    "file": "assets/venues/arxiv.svg"
+  },
+  "pacificvis2025": {
+    "url": "https://pacificvis2025.github.io/pages/assets/img/Logo2_white_72dpi.png",
+    "file": "assets/venues/pacificvis2025.png"
+  },
+  "ieee": {
+    "url": "https://ieeevis.org/year/2023/assets/theme/ieee-logo-white.svg",
+    "file": "assets/venues/ieee.svg"
+  },
+  "pacificvis": {
+    "file": "assets/venues/pacificvis.svg",
+    "url": "https://pacificvis.org/pacificvis-logo.svg"
+  },
+  "tvcg": {
+    "file": "assets/venues/tvcg.svg",
+    "url": "https://www.collaborative-ai.org/assets/img/tvcg.png",
+    "note": "Journal masthead isolated with an SVG viewport from the publisher cover reproduced by an editorial board member."
+  },
+  "tpami": {
+    "file": "assets/venues/tpami.svg",
+    "url": "https://xpixel.group/images/activities/TPAMI2025.png",
+    "note": "Journal masthead isolated with an SVG viewport from the cover reproduced by a research group."
+  },
+  "vis2020": {
+    "file": "assets/venues/vis2020.svg",
+    "url": "https://ieeevis.org/year/2020/assets/vis2020_logo.svg"
+  },
+  "chi2027": {
+    "file": "assets/venues/chi2027.svg",
+    "url": "https://chi2027.acm.org/wp-content/themes/chi2027-custom/images/big-banner-logo.svg"
+  }
+}
